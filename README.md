@@ -9,7 +9,7 @@ In this project, I conduct an analysis of whether Bitcoin exhibits cyclical patt
 
 In my analysis, I uncovered cycle patterns by normalizing the pricing data across different halving periods. Additionally, I demonstrated that these patterns are statistically significant using sinusoidal models, which are used to capture cyclic behaviors in time-series data. I also analyzed past monetary returns to predict the outcome of the current cycle, projecting a plausible range for Bitcoin's price by the end of the halving cycle in 2028. This includes a 96.57% growth in value, a $62000  value gain.
 
-Please refer to the file btc_halving_analysis_final.pdf for a complete breakdown of my analysis.
+Please refer to the file btc_halving_analysis_final_pages1-18.pdf & btc_halving_analysis_final_pages18-35.pdf for an online viewable complete breakdown of my analysis. Otherwise, word, pdf, and html versions can be found under output_files
 
 -----
 
