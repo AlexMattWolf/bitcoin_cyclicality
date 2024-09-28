@@ -1,6 +1,8 @@
 # bitcoin_cyclicality
  Project analyzing the Cyclical Patterns of Bitcoin
 
+ Author: Alexander Wolf
+
  **Disclaimer:** I am not a professional investment advisor, and this material does not constitute investment advice. Please conduct your own research and due diligence before making any investment decisions.
 
 ## Does Bitcoin show cycles in its pricing data?
