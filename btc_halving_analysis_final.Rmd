@@ -1,6 +1,7 @@
 ---
 title: "Bitcoin Analysis - R Notebook"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 ---
@@ -56,7 +57,9 @@ A few months ago, I was listening to one of my favorite podcasts, All-In. The ho
 
 <center>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R6hJh-OwoZw?t=3184" frameborder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R6hJh-OwoZw?t=3184" frameborder="0">
+
+</iframe>
 
 [*https://www.youtube.com/watch?v=R6hJh-OwoZw&t=3184s*](https://www.youtube.com/watch?v=R6hJh-OwoZw&t=3184s)
 
@@ -269,11 +272,19 @@ print(p)
 
 Comparing pricing directly has a downside because of the difference in value. This makes it difficult to see patterns across huge value jumps. In order to counteract this, I normalized the pricing using the following formula:
 
-<center>*[Close Price - Minimum of Halving Period] / Range of the Halving Period*</center>
+<center>
+
+$NormalizedValue = \frac{Close Price - Minimum of Halving Period}{Range of the Halving Period}$
+
+</center>
 
 The range is give by:
 
-<center>*Range of the Halving Period = Maximum of Halving Period - Minimum of Halving Period*</center>
+<center>
+
+$Range of the Halving Period = Maximum of Halving Period - Minimum of Halving Period$
+
+</center>
 
 This resulted in a percentage value instead of a price value. Every price is scaled from 0% (the *Minimum of Halving Period)* to 100% (the *Maximum of Halving Period*). Now the prices of each halving period could be overlaid on the same graph and same y-axis without fear that differences in values could cause distortion.
 
