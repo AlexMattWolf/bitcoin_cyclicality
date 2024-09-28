@@ -1,9 +1,10 @@
 ---
 title: "Bitcoin Analysis - R Notebook"
 output:
-  pdf_document: default
+  word_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 <center>
@@ -272,19 +273,11 @@ print(p)
 
 Comparing pricing directly has a downside because of the difference in value. This makes it difficult to see patterns across huge value jumps. In order to counteract this, I normalized the pricing using the following formula:
 
-<center>
-
-$NormalizedValue = \frac{Close Price - Minimum of Halving Period}{Range of the Halving Period}$
-
-</center>
+<center>$NormalizedValue = \frac{Close Price - Minimum of Halving Period}{Range of the Halving Period}$</center>
 
 The range is give by:
 
-<center>
-
-$Range of the Halving Period = Maximum of Halving Period - Minimum of Halving Period$
-
-</center>
+<center>$Range of the Halving Period = Maximum of Halving Period - Minimum of Halving Period$</center>
 
 This resulted in a percentage value instead of a price value. Every price is scaled from 0% (the *Minimum of Halving Period)* to 100% (the *Maximum of Halving Period*). Now the prices of each halving period could be overlaid on the same graph and same y-axis without fear that differences in values could cause distortion.
 
